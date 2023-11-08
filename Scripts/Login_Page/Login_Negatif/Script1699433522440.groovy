@@ -23,17 +23,41 @@ WebUI.maximizeWindow()
 
 WebUI.takeScreenshot()
 
-WebUI.setText(findTestObject('textbox_Username'), User)
-
-WebUI.verifyTextPresent(User, true)
+WebUI.setText(findTestObject('Login_Page/textbox_Password'), GlobalVariable.Password)
 
 WebUI.takeScreenshot()
 
-WebUI.setText(findTestObject('textbox_Password'), Password)
+WebUI.click(findTestObject('Login_Page/button_Login'))
+
+WebUI.verifyElementText(findTestObject('Login_Page/label_UsernameError'), 'Epic sadface: Username is required')
 
 WebUI.takeScreenshot()
 
-WebUI.click(findTestObject('button_Login'))
+WebUI.clearText(findTestObject('Login_Page/textbox_Password'))
 
-WebUI.verifyElementText(findTestObject('label_Products'), 'Products')
+WebUI.takeScreenshot()
+
+WebUI.setText(findTestObject('Login_Page/textbox_Username'), GlobalVariable.User)
+
+WebUI.takeScreenshot()
+
+WebUI.verifyTextPresent(GlobalVariable.User, false)
+
+WebUI.verifyElementPresent(findTestObject('Login_Page/icon_Error'), 0)
+
+WebUI.click(findTestObject('Login_Page/button_Login'))
+
+WebUI.verifyElementText(findTestObject('Login_Page/label_PasswordError'), 'Epic sadface: Password is required')
+
+WebUI.takeScreenshot()
+
+WebUI.setText(findTestObject('Login_Page/textbox_Password'), 'sss')
+
+WebUI.takeScreenshot()
+
+WebUI.click(findTestObject('Login_Page/button_Login'))
+
+WebUI.verifyElementText(findTestObject('Login_Page/label_UserAndPassNotMatch'), 'Epic sadface: Username and password do not match any user in this service')
+
+WebUI.takeScreenshot()
 
