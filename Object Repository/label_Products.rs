@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;header_container&quot;]/div[2]/span</value>
+         <value>//*[text()[contains(.,'Products')]]</value>
       </entry>
       <entry>
          <key>BASIC</key>
