@@ -21,3 +21,21 @@ WebUI.openBrowser('https://www.saucedemo.com/')
 
 WebUI.maximizeWindow()
 
+WebUI.takeScreenshot()
+
+WebUI.setText(findTestObject('textbox_Username'), User)
+
+WebUI.verifyElementText(findTestObject('textbox_Username'), User)
+
+WebUI.takeScreenshot()
+
+WebUI.setText(findTestObject('textbox_Password'), Password)
+
+WebUI.verifyElementText(findTestObject('textbox_Password'), Password)
+
+WebUI.takeScreenshot()
+
+WebUI.click(findTestObject('button_Login'))
+
+WebUI.verifyElementText(findTestObject('label_Products'), 'Products')
+
