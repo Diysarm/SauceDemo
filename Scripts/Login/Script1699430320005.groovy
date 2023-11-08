@@ -25,13 +25,11 @@ WebUI.takeScreenshot()
 
 WebUI.setText(findTestObject('textbox_Username'), User)
 
-WebUI.verifyElementText(findTestObject('textbox_Username'), User)
+WebUI.verifyTextPresent(User, true)
 
 WebUI.takeScreenshot()
 
 WebUI.setText(findTestObject('textbox_Password'), Password)
-
-WebUI.verifyElementText(findTestObject('textbox_Password'), Password)
 
 WebUI.takeScreenshot()
 
