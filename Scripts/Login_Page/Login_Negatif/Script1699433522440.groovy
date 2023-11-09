@@ -51,7 +51,7 @@ WebUI.verifyElementText(findTestObject('Login_Page/label_PasswordError'), 'Epic 
 
 WebUI.takeScreenshot()
 
-WebUI.setText(findTestObject('Login_Page/textbox_Password'), 'sss')
+WebUI.setText(findTestObject('Login_Page/textbox_Password'), 'sssd')
 
 WebUI.takeScreenshot()
 
