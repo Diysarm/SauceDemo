@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>end_to_end</name>
+   <name>verifikasi_detail_produk</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,33 +10,19 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>8acb4e04-2166-4401-a4ca-d53203fdf6e4</testSuiteGuid>
+   <testSuiteGuid>b620daf7-1032-4376-a9e0-013881e8b6a9</testSuiteGuid>
    <testCaseLink>
-      <guid>76e01489-e8c0-4988-ae1e-ff1f24083e0a</guid>
+      <guid>e95b3c4f-877d-4844-83c6-4d7260c915f7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login_Page/Login</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a89cbd80-d119-4d7f-b533-174a63bff2de</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Filter_Page/Filter</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>422760a0-a403-4bad-81c9-a85a9aed8eb4</guid>
+      <guid>d073105a-aea4-46c2-98fc-05ac37ea4e9d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Detail_Produk_Page/Verifikasi_detail_produk_add_to_cart</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>8f221dfa-c3f5-4c8d-9c6d-79c5e724ccba</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Checkout_Page/Checkout</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
