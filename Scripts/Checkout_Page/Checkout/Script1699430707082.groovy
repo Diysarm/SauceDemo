@@ -17,5 +17,45 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.verifyElementVisible(findTestObject('Check Out/button_ShoppingCart'))
+
+WebUI.click(findTestObject('Check Out/button_ShoppingCart'))
+
+WebUI.takeScreenshot()
+
+WebUI.verifyElementVisible(findTestObject('Check Out/button_CheckOut'))
+
+WebUI.click(findTestObject('Check Out/button_CheckOut'))
+
+WebUI.takeScreenshot()
+
+WebUI.verifyElementVisible(findTestObject('Check Out/textbox_FirstName'))
+
+WebUI.setText(findTestObject('Check Out/textbox_FirstName'), 'Edy')
+
+WebUI.takeScreenshot()
+
+WebUI.verifyElementVisible(findTestObject('Check Out/textbox_LastName'))
+
+WebUI.setText(findTestObject('Check Out/textbox_LastName'), 'Nur')
+
+WebUI.takeScreenshot()
+
+WebUI.verifyElementVisible(findTestObject('Check Out/textbox_Zip'))
+
+WebUI.setText(findTestObject('Check Out/textbox_Zip'), '12345')
+
+WebUI.takeScreenshot()
+
+WebUI.verifyElementVisible(findTestObject('Check Out/button_Continue'))
+
+WebUI.click(findTestObject('Check Out/button_Continue'))
+
+WebUI.takeScreenshot()
+
+WebUI.verifyElementVisible(findTestObject('Check Out/button_Finish'))
+
+WebUI.click(findTestObject('Check Out/button_Finish'))
+
+WebUI.takeScreenshot()
 
