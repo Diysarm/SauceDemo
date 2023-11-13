@@ -16,9 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 
-'buka browser\r\n'
 WebUI.openBrowser('https://www.saucedemo.com/')
 
 WebUI.maximizeWindow()
