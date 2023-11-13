@@ -1,0 +1,43 @@
+{
+  "keywordFileContentHash": "5417C40F1EA567A10A01DC120FE26FE2",
+  "keywordClasses": [
+    {
+      "name": "cusKey.KeywordFilter",
+      "keywordMethods": [
+        {
+          "name": "verifyFilterDescending",
+          "parameters": [
+            {
+              "name": "namaProduk1",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "org.openqa.selenium.WebElement",
+                "unresolvedClassName": "WebElement",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "namaProduk2",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "org.openqa.selenium.WebElement",
+                "unresolvedClassName": "WebElement",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
