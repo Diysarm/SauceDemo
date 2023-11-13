@@ -17,6 +17,18 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login_Page/Login</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fb4ee793-4e78-450e-83eb-bfce77a5c96b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b8491b72-4f6e-4522-aa8c-dc8ec9be2ec3</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>772a54db-6280-40fd-8c41-4d61ed0ad4c0</guid>
