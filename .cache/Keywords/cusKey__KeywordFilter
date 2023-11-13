@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "5417C40F1EA567A10A01DC120FE26FE2",
+  "keywordFileContentHash": "F3221F6A7089A71F748C90CD53A1B810",
   "keywordClasses": [
     {
       "name": "cusKey.KeywordFilter",
@@ -33,11 +33,10 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
