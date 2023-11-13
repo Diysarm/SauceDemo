@@ -17,47 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://www.saucedemo.com/')
+WebUI.verifyElementText(findTestObject('Detail_Produk_Page/label_swagLabs'), 'Swag Labs')
 
-WebUI.maximizeWindow()
+WebUI.verifyElementVisible(findTestObject('Detail_Produk_Page/label_produkSauceLabsBackpack'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.takeScreenshot()
+WebUI.verifyElementVisible(findTestObject('Detail_Produk_Page/label_priceKatalogPage'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Login_Page/textbox_Password'), GlobalVariable.Password)
-
-WebUI.takeScreenshot()
-
-WebUI.click(findTestObject('Login_Page/button_Login'))
-
-WebUI.verifyElementText(findTestObject('Login_Page/label_UsernameError'), 'Epic sadface: Username is required')
-
-WebUI.takeScreenshot()
-
-WebUI.clearText(findTestObject('Login_Page/textbox_Password'))
-
-WebUI.takeScreenshot()
-
-WebUI.setText(findTestObject('Login_Page/textbox_Username'), GlobalVariable.User)
-
-WebUI.takeScreenshot()
-
-WebUI.verifyTextPresent(GlobalVariable.User, false)
-
-WebUI.verifyElementPresent(findTestObject('Login_Page/icon_Error'), 0)
-
-WebUI.click(findTestObject('Login_Page/button_Login'))
-
-WebUI.verifyElementText(findTestObject('Login_Page/label_PasswordError'), 'Epic sadface: Password is required')
-
-WebUI.takeScreenshot()
-
-WebUI.setText(findTestObject('Login_Page/textbox_Password'), 'sssd')
-
-WebUI.takeScreenshot()
-
-WebUI.click(findTestObject('Login_Page/button_Login'))
-
-WebUI.verifyElementText(findTestObject('Login_Page/label_UserAndPassNotMatch'), 'Epic sadface: Username and password do not match any user in this service')
+WebUI.click(findTestObject('Detail_Produk_Page/button_addToCartCatalogue'))
 
 WebUI.takeScreenshot()
 
