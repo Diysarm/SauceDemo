@@ -16,9 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 
-'buka browser\r\n'
 WebUI.openBrowser('https://www.saucedemo.com/')
 
 WebUI.maximizeWindow()
@@ -40,14 +38,4 @@ WebUI.click(findTestObject('Login_Page/button_Login'))
 WebUI.verifyElementText(findTestObject('Login_Page/label_Products'), 'Products')
 
 WebUI.takeScreenshot()
-
-WebUI.selectOptionByValue(findTestObject('Detail_produk/select'), 'za', false)
-
-WebElement element1 = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Detail_produk/button_Product', 
-        [('i') : i]))
-
-WebElement element2 = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Detail_produk/button_Produk2', 
-        [('j') : j]))
-
-CustomKeywords.'cusKey.KeywordFilter.verifyFilterDescending'(element1, element2)
 
